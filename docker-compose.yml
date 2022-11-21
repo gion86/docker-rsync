@@ -1,0 +1,12 @@
+version: '2'
+services:
+  rsync-volume:
+    image: rsync_img
+    volumes:
+      - ./test_vol:/export
+    environment:
+      VOLUME: /test_vol
+      USER: testu
+      GROUP: testg
+    ports:
+      - 873:873
