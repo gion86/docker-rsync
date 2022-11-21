@@ -27,7 +27,7 @@ An example usage with docker-compose:
 version: '2'
 services:
   rsync-volume:
-    image: stefda/rsync
+    image: rsync_img
     volumes:
       - /var/www/app/src
     environment:
